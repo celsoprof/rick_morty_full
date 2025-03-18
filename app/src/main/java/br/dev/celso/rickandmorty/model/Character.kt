@@ -9,5 +9,5 @@ data class Character(
     var origin: Origin,
     var location: Location,
     var image: String = "",
-
+    var episode: List<Episode>
 )
