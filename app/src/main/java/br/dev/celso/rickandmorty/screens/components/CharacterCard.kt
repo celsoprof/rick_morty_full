@@ -57,12 +57,13 @@ fun CharacterCard(onClick: () -> Unit) {
             ) {
                 Row {
                     Card(
-                        shape = CutCornerShape(
-                            topEnd = 24.dp,
-                            topStart = 24.dp,
-                            bottomStart = 24.dp,
-                            bottomEnd = 24.dp
-                        ),
+//                        shape = CutCornerShape(
+//                            topEnd = 24.dp,
+//                            topStart = 24.dp,
+//                            bottomStart = 24.dp,
+//                            bottomEnd = 24.dp
+//                        ),
+                        shape = CircleShape,
                         border = BorderStroke(
                             width = 2.dp,
                             color = Color(0xFF42EE44)
@@ -114,5 +115,7 @@ fun CharacterCard(onClick: () -> Unit) {
 @Preview
 @Composable
 private fun CharacterCardPreview() {
-    CharacterCard(onClick = {})
+    CharacterCard(onClick = {
+
+    })
 }

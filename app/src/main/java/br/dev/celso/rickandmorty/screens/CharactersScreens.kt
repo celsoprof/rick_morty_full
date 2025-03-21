@@ -85,5 +85,5 @@ fun CharactersScreen(navController: NavHostController?) {
 @Preview
 @Composable
 private fun CharacterScreenPreview() {
-    CharactersScreen( null)
+    CharactersScreen(null)
 }

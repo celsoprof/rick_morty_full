@@ -1,0 +1,43 @@
+Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight(),
+        shape = RectangleShape,
+        colors = CardDefaults
+            .cardColors(
+                containerColor = Color.DarkGray
+            )
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.SpaceBetween,
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(8.dp)
+        ) {
+            Column(
+                modifier = Modifier
+                    .weight(3f)
+            ) {
+                Text(
+                    text = "The name of episode.",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = Color.Cyan
+                )
+                Text(
+                    text = "S0XEOX",
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.SemiBold,
+                    color = Color.White
+                )
+            }
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.ArrowForwardIos,
+                contentDescription = "",
+                tint = Color.White,
+                modifier = Modifier
+                    .weight(1f)
+            )
+        }
+    }
